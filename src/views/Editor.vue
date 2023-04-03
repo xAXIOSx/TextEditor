@@ -1,6 +1,6 @@
 <template>
   <div class="editor" @click="hideWindow">
-    <PopUp ref="popUp" :text="'Do you want to save your text?'"></PopUp>
+    <PopUp ref="popUp" text="Do you want to save your text?" :input="true" @saveConfirm="saveRecord"></PopUp>
     <ColorWindow ref="colorPopUp" @newColor="setColorHistory" />
     <EditorPanel
       ref="editorPanel"
@@ -81,9 +81,13 @@ export default {
     hideWindow(event) {
       this.$refs.colorPopUp.unvisibleWindow(event);
     },
-
     saveProof(){
       this.$refs.popUp.showPopUp()
+    },
+    saveRecord(inputValue){
+      // Нужно создать обьект из этих данных + дата времени
+      console.log(inputValue)
+      console.log(this.$refs.editorField.getHTML())
     }
   },
   components: {

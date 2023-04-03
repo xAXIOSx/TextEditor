@@ -26,6 +26,9 @@ export default {
     };
   },
   methods: {
+    getHTML(){
+      return this.$refs.input.innerHTML
+    },
     updateStyles(newStyles) {
       this.styles = newStyles;
     },
