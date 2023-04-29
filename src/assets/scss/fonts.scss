@@ -1,35 +1,35 @@
 
 @font-face{
     font-family: 'Inter';
-    src: url('./assets/fonts/Inter/Inter-Thin.ttf') format('truetype');
+    src: url('@/assets/fonts/Inter/Inter-Thin.ttf') format('truetype');
     font-weight: 100;
 }
 
 @font-face{
     font-family: 'Inter';
-    src: url('./assets/fonts/Inter/Inter-Light.ttf') format('truetype');
+    src: url('@/assets/fonts/Inter/Inter-Light.ttf') format('truetype');
     font-weight: 300;
 }
 @font-face{
     font-family: 'Inter';
-    src: url('./assets/fonts/Inter/Inter-Regular.ttf') format('truetype');
+    src: url('@/assets/fonts/Inter/Inter-Regular.ttf') format('truetype');
     font-weight: 400;
 }
 @font-face{
     font-family: 'Inter';
-    src: url('./assets/fonts/Inter/Inter-Medium.ttf') format('truetype');
+    src: url('@/assets/fonts/Inter/Inter-Medium.ttf') format('truetype');
     font-weight: 500;
 }
 
 @font-face{
     font-family: 'Inter';
-    src: url('./assets/fonts/Inter/Inter-Bold.ttf') format('truetype');
+    src: url('@/assets/fonts/Inter/Inter-Bold.ttf') format('truetype');
     font-weight: 700;
 }
 
 @font-face{
     font-family: 'Inter';
-    src: url('./assets/fonts/Inter/Inter-Black.ttf') format('truetype');
+    src: url('@/assets/fonts/Inter/Inter-Black.ttf') format('truetype');
     font-weight: 900;
 }
 
@@ -38,35 +38,35 @@
 
 @font-face{
     font-family: 'Montserrat';
-    src: url('./assets/fonts/Montserrat/Montserrat-Thin.ttf') format('truetype');
+    src: url('@/assets/fonts/Montserrat/Montserrat-Thin.ttf') format('truetype');
     font-weight: 100;
 }
 
 @font-face{
     font-family: 'Montserrat';
-    src: url('./assets/fonts/Montserrat/Montserrat-Light.ttf') format('truetype');
+    src: url('@/assets/fonts/Montserrat/Montserrat-Light.ttf') format('truetype');
     font-weight: 300;
 }
 @font-face{
     font-family: 'Montserrat';
-    src: url('./assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+    src: url('@/assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
     font-weight: 400;
 }
 @font-face{
     font-family: 'Montserrat';
-    src: url('./assets/fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+    src: url('@/assets/fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
     font-weight: 500;
 }
 
 @font-face{
     font-family: 'Montserrat';
-    src: url('./assets/fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+    src: url('@/assets/fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
     font-weight: 700;
 }
 
 @font-face{
     font-family: 'Montserrat';
-    src: url('./assets/fonts/Montserrat/Montserrat-Black.ttf') format('truetype');
+    src: url('@/assets/fonts/Montserrat/Montserrat-Black.ttf') format('truetype');
     font-weight: 900;
 }
 
@@ -74,35 +74,35 @@
 
 @font-face{
     font-family: 'Roboto';
-    src: url('./assets/fonts/Roboto/Roboto-Thin.ttf') format('truetype');
+    src: url('@/assets/fonts/Roboto/Roboto-Thin.ttf') format('truetype');
     font-weight: 100;
 }
 
 @font-face{
     font-family: 'Roboto';
-    src: url('./assets/fonts/Roboto/Roboto-Light.ttf') format('truetype');
+    src: url('@/assets/fonts/Roboto/Roboto-Light.ttf') format('truetype');
     font-weight: 300;
 }
 @font-face{
     font-family: 'Roboto';
-    src: url('./assets/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    src: url('@/assets/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
     font-weight: 400;
 }
 @font-face{
     font-family: 'Roboto';
-    src: url('./assets/fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+    src: url('@/assets/fonts/Roboto/Roboto-Medium.ttf') format('truetype');
     font-weight: 500;
 }
 
 @font-face{
     font-family: 'Roboto';
-    src: url('./assets/fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+    src: url('@/assets/fonts/Roboto/Roboto-Bold.ttf') format('truetype');
     font-weight: 700;
 }
 
 @font-face{
     font-family: 'Roboto';
-    src: url('./assets/fonts/Roboto/Roboto-Black.ttf') format('truetype');
+    src: url('@/assets/fonts/Roboto/Roboto-Black.ttf') format('truetype');
     font-weight: 900;
 }
 
@@ -112,35 +112,35 @@
 
 @font-face{
     font-family: 'Raleway';
-    src: url('./assets/fonts/Raleway/Raleway-Thin.ttf') format('truetype');
+    src: url('@/assets/fonts/Raleway/Raleway-Thin.ttf') format('truetype');
     font-weight: 100;
 }
 
 @font-face{
     font-family: 'Raleway';
-    src: url('./assets/fonts/Raleway/Raleway-Light.ttf') format('truetype');
+    src: url('@/assets/fonts/Raleway/Raleway-Light.ttf') format('truetype');
     font-weight: 300;
 }
 @font-face{
     font-family: 'Raleway';
-    src: url('./assets/fonts/Raleway/Raleway-Regular.ttf') format('truetype');
+    src: url('@/assets/fonts/Raleway/Raleway-Regular.ttf') format('truetype');
     font-weight: 400;
 }
 @font-face{
     font-family: 'Raleway';
-    src: url('./assets/fonts/Raleway/Raleway-Medium.ttf') format('truetype');
+    src: url('@/assets/fonts/Raleway/Raleway-Medium.ttf') format('truetype');
     font-weight: 500;
 }
 
 @font-face{
     font-family: 'Raleway';
-    src: url('./assets/fonts/Raleway/Raleway-Bold.ttf') format('truetype');
+    src: url('@/assets/fonts/Raleway/Raleway-Bold.ttf') format('truetype');
     font-weight: 700;
 }
 
 @font-face{
     font-family: 'Raleway';
-    src: url('./assets/fonts/Raleway/Raleway-Black.ttf') format('truetype');
+    src: url('@/assets/fonts/Raleway/Raleway-Black.ttf') format('truetype');
     font-weight: 900;
 }
 
@@ -167,7 +167,7 @@
   
 //       @font-face {
 //         font-family: #{$fName};
-//         src: url('./assets/fonts/#{$fName}/#{$fName}-#{$fType}.ttf') format('truetype');
+//         src: url('@/assets/fonts/#{$fName}/#{$fName}-#{$fType}.ttf') format('truetype');
 //         font-weight: '#{$i}00';
 //       }
 //     }
