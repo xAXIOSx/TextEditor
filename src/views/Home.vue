@@ -1,22 +1,18 @@
 <template>
+  <PopUp ref="popUp" text="Do you want to save your text?" :input="true" @saveConfirm="saveRecord">Please enter your project name</PopUp>
   <SaveList></SaveList>
 </template>
 
 <script>
 import SaveList from "@/components/home-components/SaveList";
+import PopUp from "@/components/UI kit/PopUp";
 export default {
-  components: {SaveList},
+  components: {SaveList, PopUp},
 
   data(){
     return {
-
     }
   },
-  methods:{
-    newProject(){
-      this.$router.push('/editor')
-    }
-  }
 };
 </script>
 

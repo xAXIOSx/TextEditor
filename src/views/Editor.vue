@@ -1,6 +1,6 @@
 <template>
   <div class="editor" @click="hideWindow">
-    <PopUp ref="popUp" text="Do you want to save your text?" :input="true" @saveConfirm="saveRecord"></PopUp>
+    <PopUp ref="popUp" :input="true" @saveConfirm="saveRecord">Please enter your project name</PopUp>
     <ColorWindow ref="colorPopUp" @newColor="setColorHistory" />
     <EditorPanel
       ref="editorPanel"

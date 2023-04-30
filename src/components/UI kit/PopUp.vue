@@ -1,8 +1,10 @@
 <template>
-  <div v-if="isShowPopUp" @click="closeOutBackground" class="darknessWrapper">
-    <div class="popUp">
+  <div v-if="$store.state.isPopUpShow" @click="closeOutBackground" class="darknessWrapper">
+    <div class="popUp" @click.stop>
       <div class="popUp__text">
-        <h3>{{ text }}</h3>
+        <h3>
+          <slot></slot>
+        </h3>
       </div>
       <div v-if="input" class="popUp__input">
         <input v-model="inputValue" autofocus placeholder="Project Name" type="text">
@@ -24,7 +26,6 @@ export default {
     };
   },
   props: {
-    text: String,
     input: Boolean
   },
   methods: {
@@ -36,15 +37,13 @@ export default {
       this.closePopUp()
     },
     showPopUp() {
-      this.isShowPopUp = true
+      this.$store.commit('setPopUpShow',true)
     },
     closePopUp() {
-      this.isShowPopUp = false
+      this.$store.commit('setPopUpShow',false)
     },
     closeOutBackground(e) {
-      // Не работает!!!
-
-      // e.srcElement.className == "darknessWrapper" || e.srcElement.localName != "button" ? this.closePopUp() : this.showPopUp()
+      this.closePopUp()
     }
   },
 };

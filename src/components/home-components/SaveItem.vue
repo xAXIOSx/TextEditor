@@ -1,5 +1,5 @@
 <template>
-  <div class="save" :class="{new: typeCheck}">
+  <div class="save"  @click="newProject" :class="{new: typeCheck}">
     <div v-if="typeCheck" class="save__content">
       <img src="@/assets/img/pencil.svg" alt=""/>
     </div>
@@ -33,6 +33,11 @@ export default {
     typeCheck(){
       return this.save.type === "new"
     }
+  },
+  methods:{
+    newProject(){
+      this.$router.push('/editor')
+    },
   }
 }
 </script>
