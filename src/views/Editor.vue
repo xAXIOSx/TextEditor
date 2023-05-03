@@ -1,12 +1,14 @@
 <template>
   <div class="editor" @click="hideWindow">
-    <PopUp ref="popUp" :input="true" @saveConfirm="saveRecord">Please enter your project name</PopUp>
+    <PopUp ref="popUp" :options="{input: true}" @saveConfirm="saveRecord">Please enter your project name</PopUp>
     <ColorWindow ref="colorPopUp" @newColor="setColorHistory" />
+<!--    EditorPanel доработать компоненты внутри -->
     <EditorPanel
       ref="editorPanel"
       @updateStyle="submitStyle"
       @setNewStyle="setNewStyles"
     />
+<!--    EditorPanel методы сделать читабельными-->
     <EditorField ref="editorField" @text-highlighted="textHighlighted" />
     <button @click="saveProof" class="editor__save">
       <img src="../assets/img/save.svg" alt="">

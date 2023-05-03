@@ -1,0 +1,29 @@
+<svg
+        width="35px"
+        height="35px"
+        viewBox="0 0 48 48"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+>
+    <path
+            d="M20 6H36"
+            stroke="rgb(120, 123, 139)"
+            stroke-width="4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+    />
+    <path
+            d="M12 42H28"
+            stroke="rgb(120, 123, 139)"
+            stroke-width="4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+    />
+    <path
+            d="M29 5.95239L19 42"
+            stroke="rgb(120, 123, 139)"
+            stroke-width="4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+    />
+</svg>

@@ -6,11 +6,11 @@
           <slot></slot>
         </h3>
       </div>
-      <div v-if="input" class="popUp__input">
+      <div v-if="options.input" class="popUp__input">
         <input v-model="inputValue" autofocus placeholder="Project Name" type="text">
       </div>
       <div class="popUp__btns">
-        <button @click="btnCancel" id="no">No</button>
+        <button v-if="options.choice" @click="btnCancel" id="no">No</button>
         <button @click="btnConfirm" id="yes">Yes</button>
       </div>
     </div>
@@ -26,7 +26,14 @@ export default {
     };
   },
   props: {
-    input: Boolean
+    options: {
+      type: Object,
+      default: {input: false, choice: true}
+    }
+    //     [
+    //   input: Boolean
+    //
+    // ]
   },
   methods: {
     btnCancel() {
@@ -43,7 +50,9 @@ export default {
       this.$store.commit('setPopUpShow',false)
     },
     closeOutBackground(e) {
-      this.closePopUp()
+      if(this.options.choice){
+        this.closePopUp()
+      }
     }
   },
 };

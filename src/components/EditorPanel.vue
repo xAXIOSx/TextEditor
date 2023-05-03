@@ -2,280 +2,46 @@
   <div class="editorPanel">
     <div class="buttons-group">
       <button type="button" @click="reset" class="reset">
-        <svg
-          width="40px"
-          height="40px"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill="none"
-            stroke="rgb(120, 123, 139)"
-            stroke-width="2"
-            d="M20,8 C18.5974037,5.04031171 15.536972,3 12,3 C7.02943725,3 3,7.02943725 3,12 C3,16.9705627 7.02943725,21 12,21 L12,21 C16.9705627,21 21,16.9705627 21,12 M21,3 L21,9 L15,9"
-          />
-        </svg>
+        <img src="@/assets/img/reset.svg" alt="reset">
       </button>
       <div class="mainButtons-group">
         <div class="editorPanel__buttons">
           <button @click="setBold">
-            <svg
-              style="fill: rgb(120, 123, 139)"
-              width="40px"
-              height="40px"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g>
-                <path fill="none" d="M0 0h24v24H0z" />
-                <path
-                  d="M8 11h4.5a2.5 2.5 0 1 0 0-5H8v5zm10 4.5a4.5 4.5 0 0 1-4.5 4.5H6V4h6.5a4.5 4.5 0 0 1 3.256 7.606A4.498 4.498 0 0 1 18 15.5zM8 13v5h5.5a2.5 2.5 0 1 0 0-5H8z"
-                />
-              </g>
-            </svg>
+            <img src="@/assets/img/bold.svg" alt="bold">
           </button>
           <button @click="setItalic">
-            <svg
-              width="35px"
-              height="35px"
-              viewBox="0 0 48 48"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M20 6H36"
-                stroke="rgb(120, 123, 139)"
-                stroke-width="4"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M12 42H28"
-                stroke="rgb(120, 123, 139)"
-                stroke-width="4"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M29 5.95239L19 42"
-                stroke="rgb(120, 123, 139)"
-                stroke-width="4"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+            <img src="@/assets/img/italic.svg" alt="italic">
           </button>
           <button @click="setUnderline">
-            <svg
-              width="38px"
-              height="38px"
-              viewBox="0 0 48 48"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect width="48" height="48" fill="none" fill-opacity="0.01" />
-              <path
-                d="M8 44H40"
-                stroke="rgb(120, 123, 139)"
-                stroke-width="4"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M37 6.09698C37 12.7636 37 15.3333 37 22C37 29.1797 31.1797 35 24 35C16.8203 35 11 29.1797 11 22C11 15.3333 11 12.7636 11 6.09698"
-                stroke="rgb(120, 123, 139)"
-                stroke-width="4"
-                stroke-linecap="round"
-              />
-            </svg>
+            <img src="@/assets/img/underline.svg" alt="underline">
           </button>
         </div>
         <div class="editorPanel__buttons">
           <button @click="setJustify('left')">
-            <svg
-              width="40px"
-              height="40px"
-              viewBox="0 0 512 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                width="480"
-                height="32"
-                x="16"
-                y="63.998"
-                fill="rgb(120, 123, 139)"
-                class="ci-primary"
-              />
-              <rect
-                width="480"
-                height="32"
-                x="16"
-                y="151.998"
-                fill="rgb(120, 123, 139)"
-                class="ci-primary"
-              />
-              <rect
-                width="480"
-                height="32"
-                x="16"
-                y="239.998"
-                fill="rgb(120, 123, 139)"
-                class="ci-primary"
-              />
-              <rect
-                width="480"
-                height="32"
-                x="16"
-                y="327.998"
-                fill="rgb(120, 123, 139)"
-                class="ci-primary"
-              />
-              <rect
-                width="320"
-                height="32"
-                x="16"
-                y="415.998"
-                fill="rgb(120, 123, 139)"
-                class="ci-primary"
-              />
-            </svg>
+            <img src="@/assets/img/justify-icons/left.svg" alt="">
           </button>
           <button @click="setJustify('center')">
-            <svg
-              width="40px"
-              height="40px"
-              viewBox="0 0 512 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                width="480"
-                height="32"
-                x="16"
-                y="63.998"
-                fill="rgb(120, 123, 139)"
-                class="ci-primary"
-              />
-              <rect
-                width="480"
-                height="32"
-                x="16"
-                y="151.998"
-                fill="rgb(120, 123, 139)"
-                class="ci-primary"
-              />
-              <rect
-                width="480"
-                height="32"
-                x="16"
-                y="239.998"
-                fill="rgb(120, 123, 139)"
-                class="ci-primary"
-              />
-              <rect
-                width="480"
-                height="32"
-                x="16"
-                y="327.998"
-                fill="rgb(120, 123, 139)"
-                class="ci-primary"
-              />
-              <rect
-                width="320"
-                height="32"
-                x="96"
-                y="415.998"
-                fill="rgb(120, 123, 139)"
-                class="ci-primary"
-              />
-            </svg>
+            <img src="@/assets/img/justify-icons/center.svg" alt="">
           </button>
           <button @click="setJustify('right')">
-            <svg
-              width="40px"
-              height="40px"
-              viewBox="0 0 512 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                width="480"
-                height="32"
-                x="16"
-                y="63.998"
-                fill="rgb(120, 123, 139)"
-                class="ci-primary"
-              />
-              <rect
-                width="480"
-                height="32"
-                x="16"
-                y="151.998"
-                fill="rgb(120, 123, 139)"
-                class="ci-primary"
-              />
-              <rect
-                width="480"
-                height="32"
-                x="16"
-                y="239.998"
-                fill="rgb(120, 123, 139)"
-                class="ci-primary"
-              />
-              <rect
-                width="480"
-                height="32"
-                x="16"
-                y="327.998"
-                fill="rgb(120, 123, 139)"
-                class="ci-primary"
-              />
-              <rect
-                width="320"
-                height="32"
-                x="176"
-                y="415.998"
-                fill="rgb(120, 123, 139)"
-                class="ci-primary"
-              />
-            </svg>
+            <img src="@/assets/img/justify-icons/right.svg" alt="">
           </button>
         </div>
       </div>
     </div>
 
     <div class="editorPanel__options">
-      <select id="font-family" @input="setOption">
-        <option disabled value="">Please select font-family</option>
-        <option>Roboto</option>
-        <option>Montserrat</option>
-        <option>Inter</option>
-        <option>Raleway</option>
-      </select>
-
-      <select id="font-weight" @input="setOption">
-        <option disabled value="">Please select font-weight</option>
-        <option>100</option>
-        <option>300</option>
-        <option>400</option>
-        <option>500</option>
-        <option>700</option>
-        <option>900</option>
-      </select>
-
-      <select id="font-size" @input="setOption">
-        <option disabled value="">Please select font-weight</option>
-        <option>8px</option>
-        <option>16px</option>
-        <option>32px</option>
-        <option>64px</option>
-        <option>128px</option>
-        <option>256px</option>
-      </select>
+      <Options @input="setOption" :option="{name:'font-family',params:['Roboto','Montserrat','Inter','Raleway']}"/>
+      <Options @input="setOption" :option="{name:'font-weight',params:[100,300,400,500,700,900]}"/>
+      <Options @input="setOption" :option="{name:'font-size',params:['8px','16px','32px','64px','128px','256px']}"/>
     </div>
   </div>
 </template>
 
 <script>
 export default {
+  components: {},
+
   data() {
     return {
       styles: {},
@@ -356,3 +122,114 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+@import "@/assets/scss/mixins.scss";
+
+.editorPanel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid rgb(28, 32, 47);
+  box-shadow: 1px 9px 14px 2px rgb(28 32 47);
+  background-color: rgb(43, 48, 71);
+
+  .buttons-group {
+    display: flex;
+    justify-content: space-between;
+    .mainButtons-group {
+      display: flex;
+    }
+  }
+
+  &__sliders {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    .slider {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+
+  &__buttons {
+    height: 105px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    border-left: 1px solid rgb(28, 32, 47);
+    border-right: 1px solid rgb(28, 32, 47);
+    button {
+      color: white;
+      width: 100px;
+      height: 100px;
+      transition: 0.2s;
+      &:hover {
+        background: rgb(53, 59, 87);
+      }
+    }
+  }
+
+  &__options {
+    width: 40%;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    * {
+      font-size: 20px;
+      font-weight: 500;
+      width: 120px;
+      height: 70px;
+      color: rgb(120, 123, 139);
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      transition: 0.2s;
+      &:hover {
+        background: rgb(53, 59, 87);
+      }
+    }
+  }
+  .reset {
+    content: "Reset";
+    font-size: 27px;
+    padding: 5px;
+    width: 100px;
+    height: 105px;
+    text-align: center;
+    font-weight: 500;
+    transition: 0.2s;
+    margin-right: 50px;
+    &:hover {
+      background: rgb(53, 59, 87);
+    }
+  }
+  @include adaptive(1650px) {
+    flex-direction: column;
+    &__options {
+      width: 100% !important;
+      border-top: 1px solid rgb(28, 32, 47);
+    }
+    .mainButtons-group {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+
+  @include adaptive(600px) {
+    &__options {
+      gap: 20px !important;
+    }
+    .reset {
+      display: none;
+    }
+  }
+}
+
+
+</style>
