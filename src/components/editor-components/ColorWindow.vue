@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import CustomWrapper from "../components/CustomWrapper.vue";
+import CustomWrapper from "./CustomWrapper.vue";
 
 export default {
   data() {

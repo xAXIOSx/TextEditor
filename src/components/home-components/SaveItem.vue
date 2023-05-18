@@ -1,9 +1,12 @@
 <template>
-  <div class="save"  @click="newProject" :class="{new: typeCheck}">
+  <div class="save" @click="newProject(save.title)" :class="{new: typeCheck}">
     <div v-if="typeCheck" class="save__content">
       <img src="@/assets/img/pencil.svg" alt=""/>
     </div>
-    <div v-else class="save__content"><span>Hello <span style="color: red">lolaalal</span></span></div>
+    <div class="save__content" v-else>
+      <div v-if="save.content !== null" v-html="snippet"></div>
+      <div v-else><h3 style="color: red;">NEW!</h3></div>
+    </div>
     <!-- <div class="save__content"><span style="color:blue; font-size:64px">Hello</span> <span style="color:yellow">Lorem ipsum, dolor sit amet <span style="font-size:64px">consectetur</span> adipisicing elit. Consectetur, totam.</span></div> -->
     <div class="save__info">
       <div class="save__groupText">
@@ -19,6 +22,7 @@
 </template>
 
 <script>
+import { computed } from 'vue'
 export default {
   name: "SaveItem",
   data() {
@@ -35,9 +39,22 @@ export default {
     }
   },
   methods:{
-    newProject(){
-      this.$router.push('/editor')
+    newProject(title){
+      if(this.typeCheck){
+        this.$store.commit('setPopUpShow',true)
+      }else {
+        this.$router.push('/editor/'+title)
+      }
     },
+  },
+  setup(props){
+
+    let snippet = computed(()=>{
+      let modifiedHtml = props.save.content.replace(/(<span[^>]+)style=".*?font-size:.*?"/g, '$1');
+      return modifiedHtml.substring(0,1000)
+    })
+
+    return {snippet}
   }
 }
 </script>
@@ -72,12 +89,14 @@ export default {
     height: 60%;
     padding: 20px;
     transition: 2s;
+    position: relative;
+    z-index: -1;
   }
 
   &__info {
     width: 100%;
     height: 40%;
-    background: rgba(18, 26, 42, 0.718);
+    background: rgba(18, 26, 42, 0.816);
     padding: 20px;
     display: flex;
     justify-content: space-between;

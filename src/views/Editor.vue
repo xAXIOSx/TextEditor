@@ -1,6 +1,6 @@
 <template>
   <div class="editor" @click="hideWindow">
-    <PopUp ref="popUp" :options="{input: true}" @saveConfirm="saveRecord">Please enter your project name</PopUp>
+    <PopUp ref="popUp" :options="{choice: false}" @popUpAnswer="saveRecord">Your project is saved</PopUp>
     <ColorWindow ref="colorPopUp" @newColor="setColorHistory" />
 <!--    EditorPanel доработать компоненты внутри -->
     <EditorPanel
@@ -17,7 +17,9 @@
 </template>
 
 <script>
-import { ColorWindow, EditorPanel, EditorField, PopUp } from "../components"
+import {ref} from 'vue'
+import { ColorWindow, EditorPanel, EditorField, PopUp } from "../components/editor-components/index.ts"
+import dateFunc from '@/modules/dateFunc'
 
 export default {
   data() {
@@ -84,12 +86,7 @@ export default {
       this.$refs.colorPopUp.unvisibleWindow(event);
     },
     saveProof(){
-      this.$refs.popUp.showPopUp()
-    },
-    saveRecord(inputValue){
-      // Нужно создать обьект из этих данных + дата времени
-      console.log(inputValue)
-      console.log(this.$refs.editorField.getHTML())
+      this.$store.commit('setPopUpShow',true)
     }
   },
   components: {
@@ -102,6 +99,18 @@ export default {
     this.colors = JSON.parse(localStorage.getItem("colorsHistory"));
     this.changeColor();
   },
+  setup(props){
+    let {currentDate} = dateFunc()
+
+    let editorField = ref(null)
+
+    let saveRecord = (answer) => {
+      let save = {content: editorField.value.getHTML(), time: currentDate.value}
+    }
+
+    return {currentDate, editorField, saveRecord}
+  },
+  props: ['saveName']
 };
 </script>
 

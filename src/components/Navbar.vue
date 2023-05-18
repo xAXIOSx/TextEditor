@@ -1,6 +1,6 @@
 <template>
   <div class="editor-title">
-    <button v-if="$route.fullPath !== '/'" class="back" @click="backRoute">
+    <button v-if="$route.fullPath !== '/'" class="back" @click="$router.push('/')">
       <img src="@/assets/img/arrow-left.svg" alt="">
     </button>
     <div class="text-part">
@@ -14,12 +14,12 @@
 export default {
   name: "Navbar",
   methods:{
-    backRoute() {
-      if (this.$route.fullPath === '/editor'){
-        this.$store.commit('setPopUpShow', true)
-      }
-      this.$router.push('/')
-    }
+    // backRoute() {
+    //   if (this.$route.fullPath === '/editor'){
+    //     this.$store.commit('setPopUpShow', true)
+    //   }
+    //   this.$router.push('/')
+    // }
   }
 }
 </script>

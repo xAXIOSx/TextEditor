@@ -9,9 +9,10 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/editor',
+    path: '/editor/:saveName',
     name: 'editor',
-    component: Editor
+    component: Editor,
+    props: true
   }
 ]
 

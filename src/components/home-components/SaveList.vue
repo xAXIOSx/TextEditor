@@ -1,19 +1,6 @@
 <template>
   <div class="save-list">
     <SaveItem v-for="saveElement in saves" :save="saveElement"></SaveItem>
-    <!--    <div @click="newProject" class="save new">-->
-    <!--      <div class="save__content">-->
-    <!--        <img src="@/assets/img/pencil.svg" alt=""/>-->
-    <!--      </div>-->
-    <!--      <div class="save__info">-->
-    <!--        <div class="save__groupText">-->
-    <!--          <div class="save__groupText-title"><h4>Create new project</h4></div>-->
-    <!--        </div>-->
-    <!--        <button type="button" class="save__upload">-->
-    <!--          <img src="@/assets/img/plus.svg" alt=""/>-->
-    <!--        </button>-->
-    <!--      </div>-->
-    <!--    </div>-->
   </div>
 </template>
 

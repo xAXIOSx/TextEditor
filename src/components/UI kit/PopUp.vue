@@ -10,8 +10,8 @@
         <input v-model="inputValue" autofocus placeholder="Project Name" type="text">
       </div>
       <div class="popUp__btns">
-        <button v-if="options.choice" @click="btnCancel" id="no">No</button>
-        <button @click="btnConfirm" id="yes">Yes</button>
+        <button v-if="options.choice" @click="btnClicked('yes')" id="no">No</button>
+        <button @click="btnClicked('ok')" id="yes">Ok</button>
       </div>
     </div>
   </div>
@@ -36,23 +36,15 @@ export default {
     // ]
   },
   methods: {
-    btnCancel() {
-      this.closePopUp()
-    },
-    btnConfirm() {
-      this.$emit('saveConfirm', this.inputValue)
-      this.closePopUp()
-    },
-    showPopUp() {
-      this.$store.commit('setPopUpShow',true)
-    },
-    closePopUp() {
-      this.$store.commit('setPopUpShow',false)
-    },
     closeOutBackground(e) {
       if(this.options.choice){
-        this.closePopUp()
+        this.$store.commit('setPopUpShow',false)
       }
+    },
+    btnClicked(answer){
+      this.$emit('popUpAnswer', answer, this.inputValue)
+      this.$store.commit('setPopUpShow',false)
+      this.inputValue = ''
     }
   },
 };
